@@ -53,3 +53,7 @@ print (randarr2)
 #Generate random integers --low,high,size
 randintarr = np.random.randint(5,10,2)
 print (randintarr)
+
+#Create 2d array of eye matrix
+eyearr = np.eye(4,dtype=int)
+print (eyearr)
