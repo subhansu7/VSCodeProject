@@ -124,3 +124,23 @@ print(my_list)  # Output: [50, 40, 30, 20, 10]
 #reverse() method is used to reverse the order of the elements in the list.
 my_list.reverse()
 print(my_list)  # Output: [10, 20, 30, 40, 50]  
+
+#slicing is a powerful technique in Python that allows you to extract a portion of a list (or any sequence) by specifying a range of indices. The syntax for slicing is as follows:
+# list[start:stop:step]
+my_list = [10, 20, 30, 40, 50]
+print(my_list[1:4])  # Output: [20, 30, 40]
+print(my_list[:3])   # Output: [10, 20, 30]
+print(my_list[2:])   # Output: [30, 40, 50]
+print(my_list[::2])  # Output: [10, 30, 50] (step of 2)
+
+
+print(my_list[-4])
+print(my_list[-2])
+#In case of negative step, start index should be gerater than stop index (post converytion to positive index) otherwise it will return empty list.  
+#In case of positive step, start index should be less than stop index (post converytion to positive index) otherwise it will return empty list.
+#print(my_list[-4:-2:-1])
+print(my_list[-2:-4:-1])
+print(my_list[4:2:-1])
+#For below case, step is negative, default start  index is length of list -1, 
+# Default stop index is -1, so it not ignore last element in reverse order.
+print(my_list[::-1]) # Output: [50, 40, 30, 20, 10] (reverse order) 
