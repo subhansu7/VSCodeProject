@@ -78,3 +78,8 @@ copied_dict = original_dict.copy()  # Creates a shallow copy of original_dict
 print ("Original dictionary:  ", original_dict)  # Output: {'name': 'Alice', 'age': 30}
 print ("Copied dictionary:  ", copied_dict)  # Output: {'name': 'Alice', 'age': 30}
 
+#demonstarte duplicate keys in a dictionary are not allowed, the last value will overwrite the previous one
+duplicate_key_dict = {"key1": "value1", "key2": "value2", "key1": "value3"}
+print ("Dictionary with duplicate keys:  ", duplicate_key_dict)  # Output: {'key1': 'value3', 'key2': 'value2'} - 'key1' has the value 'value3' because it overwrote 'value1'       
+
+
