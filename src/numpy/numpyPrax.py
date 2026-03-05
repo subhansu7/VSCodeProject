@@ -54,9 +54,13 @@ print (randarr2)
 randintarr = np.random.randint(5,10,2)
 print (randintarr)
 
+#Generate 2D array of random integers
+randint2darr =  np.random.randint (1,10, (3,4))
+print ("Random Integer 2D Array : \n", randint2darr)
+
 #Create 2d array of eye matrix
 eyearr = np.eye(4,dtype=int)
-print (eyearr)
+print ("Eye Matrix : \n", eyearr)
 
 #reshape array
 #print numpy array of 12 numbers into 3 rows and 4 columns
@@ -64,3 +68,4 @@ arr = np.arange(12)
 print ("Original Array : \n", arr)
 reshaped_arr = arr.reshape(3,4)
 print ("Reshaped Array : \n", reshaped_arr)
+
